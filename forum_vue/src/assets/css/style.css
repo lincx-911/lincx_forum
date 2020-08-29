@@ -1,0 +1,106 @@
+.header-root{
+  width: 100%;
+  border-bottom: 1px solid #cac8c8;
+  box-shadow: 0 8px 6px -6px #cac8c8;
+}
+.header-div-list{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 20px;
+  line-height: 40px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.el-head-row {
+    text-align: center;
+    line-height: 60px;
+    width: 65%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.grid-content {
+    border-radius: 4px;
+    min-height: 32px;
+  }
+  .title {
+    color: #409EFF
+  }
+  .msg-list-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .msg-list-div:hover{
+   background: #e8ecf3;
+  }
+  .avatar-div{
+    margin-left: 0;
+  }
+  .msg-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    justify-content:flex-start;
+    text-align: left;
+  }
+  .msg-title{
+    color: black;
+    font-size: large;
+  }
+  .msg-posttime{
+    margin-top: 3px;
+    color: #bdbfc2;
+    flex-wrap:wrap;
+    font-size: 15px;
+    justify-content: flex-start; 
+    display: flex;
+  }
+  .class-tag-div{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .username{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .rank-div{
+    margin-top: 20px;
+  }
+  .rank-title{
+    font-weight: bold;
+    font-size: large;
+    color: #409EFF;
+  }
+  .b-div{
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    margin-left: 30px;
+  }
+  .index-div{
+    margin-top: 10px;
+  }
+  .edi-div .article-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+  }
+  .edi-top .header-ul{
+    display: flex;
+    flex: row;
+    justify-content: start;
+    height: 30px;
+  }
+  .container{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 65%;
+  }
+  .el-con-size{
+    width: 15%;
+  }

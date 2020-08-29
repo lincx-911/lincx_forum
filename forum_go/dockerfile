@@ -1,0 +1,9 @@
+FROM alpine:latest
+
+WORKDIR /home/lincx_py/forum/forum_go
+COPY . /forum
+
+EXPOSE 8082
+
+CMD ["./forum"]
+
