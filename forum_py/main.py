@@ -5,10 +5,10 @@ import jieba
 app = Flask(__name__)
 
 conn  = pymysql.Connect(
-    host='120.78.6.205',
+    host='xxxxxxxxxx',
     port=3306,
     user='root',
-    password='123456',
+    password='xxxxxxx',
     db='forum',
     charset='utf8'
 )
