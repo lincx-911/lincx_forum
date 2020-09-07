@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forum-py
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      project: forum
+      app: forum-py
+  template:
+    metadata:
+      labels:
+        project: forum
+        app: forum-py
+    spec:
+      imagePullSecrets: 
+      - name: "docker-regsitry-auth"
+      containers:
+      - image: registry.cn-shenzhen.aliyuncs.com/lin_cx/forum-py:v1.0.0
+        name: forum-py
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8083
+          name: forum-py-1
+          protocol: TCP

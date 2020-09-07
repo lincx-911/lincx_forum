@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alpine-forum-java
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      project: forum
+      app: alpine-forum-java
+  template:
+    metadata:
+      labels:
+        project: forum
+        app: alpine-forum-java
+    spec:
+      imagePullSecrets: 
+      - name: "docker-regsitry-auth"
+      containers:
+      - image: registry.cn-shenzhen.aliyuncs.com/lin_cx/alpine-forum-java:v1.0.0
+        name: alpine-forum-java
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8886
+          name: alpine-forum-java-1
+          protocol: TCP
